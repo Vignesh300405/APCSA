@@ -22,7 +22,7 @@ public class Guess {
 
         Scanner scan = new Scanner(System.in);
 
-        numToGuess = (int) (Math.random() * (100 - 1) * 1);
+        numToGuess = (int) (Math.random() * (100 - 1) + 1);
 
         System.out.println("Guess a number between 1 and 100.");
         guess = scan.nextInt();
