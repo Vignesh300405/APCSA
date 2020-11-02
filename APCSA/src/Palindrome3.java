@@ -15,7 +15,7 @@ public class Palindrome3 {
 
     public static void main(String[] args) {
 
-        String inputxxx;
+        String input;
         int length;
         int lengthCounter = 0;
         int halfLength;
@@ -25,32 +25,32 @@ public class Palindrome3 {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Input a string: ");
-        inputxxx = scan.nextLine();
+        input = scan.nextLine();
 
-        while(!inputxxx.equals("")) {
+        while(!input.equals("")) {
 
-            length = inputxxx.length();
+            length = input.length();
             halfLength = length / 2;
 
 
             while(lengthCounter != halfLength) {
 
-                halfInput.add(String.valueOf(inputxxx.charAt(lengthCounter)));
+                halfInput.add(String.valueOf(input.charAt(lengthCounter)));
                 lengthCounter++;
 
             }
 
             while((lengthCounter != length) && (lengthCounter > halfLength)) {
 
-                String charAtInput = String.valueOf(inputxxx.charAt(lengthCounter)).toLowerCase();
+                String charAtInput = String.valueOf(input.charAt(lengthCounter)).toLowerCase();
                 String charAtReflection = String.valueOf(halfInput.get(lengthCounter - halfLength)).toLowerCase();
                 if(!charAtInput.equals(charAtReflection)) {
-                    System.out.println("String: " + inputxxx + "\nThe inputxxx given is not a palindrome");
+                    System.out.println("String: " + input + "\nThe input given is not a palindrome");
                     break;
                 }
 
                 if(lengthCounter >= length) {
-                    System.out.println("String: " + inputxxx + "\nThe inputxxx given is a palindrome");
+                    System.out.println("String: " + input + "\nThe input given is a palindrome");
                 }
 
                 lengthCounter++;
@@ -59,12 +59,12 @@ public class Palindrome3 {
 
             }
 
-            System.out.println("Do you want to check if another inputxxx is a palindrome? If not, inputxxx end (all lowercase): " + length);
+            System.out.println("Do you want to check if another input is a palindrome? If not, input end (all lowercase): " + length);
             if(scan.nextLine().equals("end")) {
                 break;
             } else {
                 System.out.println("Input a string: ");
-                inputxxx = scan.nextLine();
+                input = scan.nextLine();
             }
 
 
