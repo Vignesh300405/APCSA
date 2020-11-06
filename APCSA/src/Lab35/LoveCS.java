@@ -29,7 +29,7 @@ public class LoveCS {
             count++;
         }
 
-        System.out.println("Printed this message " + LIMIT + " times.");
+        System.out.print("Printed this message " + LIMIT + " times. ");
 
         count2 = LIMIT;
 
