@@ -38,7 +38,6 @@ public class LoveCS {
             count2--;
         }
 
-        System.out.println("The sum of the numbers ");
         System.out.println("The sum of the numbers from 1 to " + LIMIT + " is " + combine + ".");
 
     }

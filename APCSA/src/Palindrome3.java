@@ -16,8 +16,9 @@ public class Palindrome3 {
     public static void main(String[] args) {
 
         String input;
-        int length;
+        double length;
         int lengthCounter = 0;
+        double halfLengthTest;
         int halfLength;
         ArrayList<String> halfInput = new ArrayList<>();
         boolean isPalindrome;
@@ -30,7 +31,9 @@ public class Palindrome3 {
         while(!input.equals("")) {
 
             length = input.length();
-            halfLength = length / 2;
+            halfLengthTest = length / 2;
+            halfLength = (int) Math.ceil(halfLengthTest);
+
 
 
             while(lengthCounter != halfLength) {
@@ -40,7 +43,12 @@ public class Palindrome3 {
 
             }
 
-            while((lengthCounter != length) && (lengthCounter > halfLength)) {
+            if((length % 2) == 0) {
+                halfInput.add(String.valueOf(input.charAt(lengthCounter)));
+                lengthCounter++;
+            }
+
+            while((lengthCounter > halfLength) && (lengthCounter < length)) {
 
                 String charAtInput = String.valueOf(input.charAt(lengthCounter)).toLowerCase();
                 String charAtReflection = String.valueOf(halfInput.get(lengthCounter - halfLength)).toLowerCase();
@@ -49,11 +57,13 @@ public class Palindrome3 {
                     break;
                 }
 
-                if(lengthCounter >= length) {
+                if(lengthCounter == length) {
                     System.out.println("String: " + input + "\nThe input given is a palindrome");
                 }
 
                 lengthCounter++;
+
+
 
 
 
@@ -65,6 +75,7 @@ public class Palindrome3 {
             } else {
                 System.out.println("Input a string: ");
                 input = scan.nextLine();
+                lengthCounter = 0;
             }
 
 

@@ -3,17 +3,13 @@ import java.util.Scanner;
 public class testFile {
 
     public static void main(String[] args) {
-        String str = "WooHoo";
+        int a = 0;
 
-        int length1 = str.length();
+        for(int i = 1; i <= 100; i++) {
+            a += i;
+        }
 
-        int half = (length1) / 2;
-
-        str = str.substring(0,half);
-
-        System.out.println(str);
-
+        System.out.println(a);
 
     }
-
 }
