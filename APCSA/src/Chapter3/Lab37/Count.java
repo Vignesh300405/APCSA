@@ -1,6 +1,8 @@
+package Chapter3.Lab37;
+
 import java.util.Scanner;
 
-public class Count2 {
+public class Count {
 
     public static void main (String[] args)
     {
