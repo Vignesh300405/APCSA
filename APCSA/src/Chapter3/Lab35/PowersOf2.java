@@ -1,4 +1,4 @@
-package Lab35;
+package Chapter3.Lab35;
 
 //****************************************************************
 // PowersOf2.java                      Project or Lab Name: Lab 3.5
