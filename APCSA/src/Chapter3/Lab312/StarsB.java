@@ -1,9 +1,8 @@
-import java.util.Scanner;
+package Chapter3.Lab312;
 
-public class testFile {
+public class StarsB {
 
     public static void main(String[] args) {
-
 
         int numberOfStars = 1;
 
@@ -24,16 +23,7 @@ public class testFile {
 
             System.out.print("\n");
         }
+
     }
+
 }
-
-
-
-
-
-
-
-
-
-
-
