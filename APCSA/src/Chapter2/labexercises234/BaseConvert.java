@@ -1,4 +1,4 @@
-package labexercises234;
+package Chapter2.labexercises234;
 
 
 //****************************************************************

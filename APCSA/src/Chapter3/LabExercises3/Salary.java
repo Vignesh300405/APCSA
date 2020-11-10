@@ -1,4 +1,4 @@
-package LabExercises3;
+package Chapter3.LabExercises3;
 
 import java.text.NumberFormat;
 import java.util.Scanner;

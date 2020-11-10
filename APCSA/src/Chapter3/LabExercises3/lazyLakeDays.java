@@ -1,4 +1,4 @@
-package LabExercises3;
+package Chapter3.LabExercises3;
 
 //****************************************************************
 // lazyLakeDays.java                      Project or Lab Name: Lab 3.2 Summative

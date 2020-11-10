@@ -1,4 +1,4 @@
-package PreLab257;
+package Chapter2.PreLab257;
 
 //****************************************************************
 // StringPlay.java                       Project or Lab Name: Lab Exercises 2.5 - 2.7

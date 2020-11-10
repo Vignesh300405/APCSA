@@ -1,4 +1,4 @@
-package LabExercises2;
+package Chapter2.LabExercises2;
 
 public class PlusTestOne {
 

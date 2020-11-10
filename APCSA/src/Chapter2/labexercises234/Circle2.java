@@ -1,4 +1,4 @@
-package labexercises234;
+package Chapter2.labexercises234;
 
 //****************************************************************
 // Circle2.java                            Project or Lab Name: Lab Exercises 2.3 - 2.4
