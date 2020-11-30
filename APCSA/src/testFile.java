@@ -4,26 +4,27 @@ public class testFile {
 
     public static void main(String[] args) {
 
+        /*int j = 0;
 
-        int numberOfStars = 1;
-
-        for (int i = numberOfStars; i <= 10; i++) {
-            System.out.print("\t\t\t");
-
-            int j = 10 - i;
-            while (j > 0) {
-                System.out.print(" ");
-                j--;
-            }
-
-            j = i;
-            while (j > 0) {
-                System.out.print("*");
-                j--;
-            }
-
-            System.out.print("\n");
+        for(int i = 1; i <= 45; i += 2) {
+            j += i;
         }
+
+        System.out.println(j);
+
+         */
+
+        int i = 1;
+        int j = 0;
+
+        while(i <= 45) {
+            j += i;
+            i += 2;
+        }
+
+        System.out.println(j);
+
+
     }
 }
 
