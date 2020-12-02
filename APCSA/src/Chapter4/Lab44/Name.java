@@ -2,9 +2,9 @@ package Chapter4.Lab44;
 
 public class Name {
 
-    String first;
-    String middle;
-    String last;
+    private String first;
+    private String middle;
+    private String last;
 
     public Name(String first, String middle, String last){
         this.first = first;

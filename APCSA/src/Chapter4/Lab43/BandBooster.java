@@ -2,8 +2,8 @@ package Chapter4.Lab43;
 
 public class BandBooster {
 
-    String name;
-    int boxesSold;
+    private String name;
+    private int boxesSold;
 
     public BandBooster(String bandBoosterName) {
         name = bandBoosterName;

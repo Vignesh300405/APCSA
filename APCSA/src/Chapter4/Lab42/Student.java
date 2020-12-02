@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Student {
 
     //declare instance data
-    String name;
-    int test1;
-    int test2;
+    private String name;
+    private int test1;
+    private int test2;
 
     Scanner scan = new Scanner(System.in);
 
