@@ -3,27 +3,24 @@ import java.util.Scanner;
 public class testFile {
 
     public static void main(String[] args) {
+        FootballPlayer fp1 = new FootballPlayer("Julio Jones", "Wide Receiver", "Atlanta Trashcans");
+        FootballPlayer fp2 = new FootballPlayer("Younghoe Koo", "Kicker", "Atlanta Trashcans");
 
-        /*int j = 0;
+        fp1.setTeam("Atlanta Falcons");
+        fp2.setTeam("Atlanta Falcons");
 
-        for(int i = 1; i <= 45; i += 2) {
-            j += i;
+        System.out.println(fp1.getTeam() + "\n" + fp2.getTeam());
+
+        for(int i = 0; i < 10; i++) {
+            fp1.increaseYears();
         }
 
-        System.out.println(j);
+        fp2.increaseYears();
 
-         */
+        System.out.println(fp1.equals(fp2));
 
-        int i = 1;
-        int j = 0;
-
-        while(i <= 45) {
-            j += i;
-            i += 2;
-        }
-
-        System.out.println(j);
-
+        System.out.println(fp1.toString());
+        System.out.println(fp2.toString());
 
     }
 }
