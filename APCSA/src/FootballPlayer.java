@@ -36,7 +36,6 @@ public class FootballPlayer {
 
     //Number 7
 
-    @Override
     public String toString() {
         return "Name: " + name +
                 " Team: " + team +
