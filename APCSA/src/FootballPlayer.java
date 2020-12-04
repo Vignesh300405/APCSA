@@ -1,6 +1,6 @@
+//Number 1
 public class FootballPlayer {
 
-    //Number 1
     String name;
     String position;
     String team;
