@@ -1,3 +1,3 @@
-APCSA
+# My APCSA Code
 
-Make sure to click on the APCSA folder first and then src for the files.
+This is a repo of all of my APCSA code, mainly for labs. Make sure not to copy line for line, just use this as inspiration of sorts.
