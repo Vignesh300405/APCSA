@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import Chapter6.Item;
 
-public class ShoppingCart {
+public class ShoppingCartTest {
 
     public static void main(String[] args) {
 
