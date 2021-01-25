@@ -1,4 +1,5 @@
 package Chapter6.Lab6;
+
 import Chapter6.Item;
 
 import java.util.Scanner;
@@ -21,6 +22,7 @@ public class Shop {
         Scanner scan = new Scanner(System.in);
 
         String keepShopping = "y";
+<<<<<<< Updated upstream
 
 	    do 
 	    {
@@ -48,39 +50,45 @@ public class Shop {
         System.out.println("Final Price: $" + df.format(totalPrice));
     public static void main (String[] args)
     {
+=======
+>>>>>>> Stashed changes
 
-    Item item;
-    ArrayList<Item> cart = new ArrayList<>();
-	String itemName;
-	double itemPrice;
-    int quantity;
+        do {
+            System.out.print ("Enter the name of the item: ");
+            itemName = scan.nextLine();
 
- 	Scanner scan = new Scanner(System.in);
+            System.out.print ("Enter the unit price: ");
+            itemPrice = scan.nextDouble();
 
-	String keepShopping = "y";
+            System.out.print ("Enter the quantity: ");
+            quantity = scan.nextInt();
 
-	do 
-	    {
-		System.out.print ("Enter the name of the item: "); 
-		itemName = scan.nextLine();
+            // *** create a new item and add it to the cart
 
-		System.out.print ("Enter the unit price: ");
-		itemPrice = scan.nextDouble();
+            item = new Item(itemName, itemPrice, quantity);
+            cart.add(item);
 
-		System.out.print ("Enter the quantity: ");
-		quantity = scan.nextInt();
+            // *** print the contents of the cart using println
 
-        // *** create a new item and add it to the cart
-        
-        Item newItem = new Item(itemName, itemPrice, quantity);
-        cart.add(newItem);
+            System.out.println();
+            System.out.println("Cart Items:");
+            System.out.println("---------------");
+            totalPrice = 0;
+            for(Item aItem : cart) {
 
+                System.out.println(aItem.getName());
+                totalPrice += aItem.getQuantity() * aItem.getPrice();
 
-        // *** print the contents of the cart object using println
-        
-        System.out.println(cart);
+            }
+            System.out.println("Total Price: $" + df.format(totalPrice));
 
+            System.out.println();
+            System.out.println("Continue shopping (y/n)?");
+            scan.nextLine();
+            keepShopping = scan.nextLine();
+            System.out.println();
 
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 		System.out.print ("Continue shopping (y/n)? ");
 		keepShopping = scan.nextLine();
@@ -89,6 +97,10 @@ public class Shop {
 <<<<<<< Updated upstream
 =======
 >>>>>>> test
+>>>>>>> Stashed changes
+=======
+        } while (keepShopping.equals("y"));
+        System.out.println("Final Price: $" + df.format(totalPrice));
 >>>>>>> Stashed changes
 
     }
