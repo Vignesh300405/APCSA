@@ -1,11 +1,7 @@
 package Chapter6;
 
-import java.text.DecimalFormat;
-
-import java.text.DecimalFormat;
-
 public class Item {
-
+   
     private String name;
     private double price;
     private int quantity;
@@ -15,29 +11,18 @@ public class Item {
         name = aName;
         price = aPrice;
         quantity = aQuantity;
-    DecimalFormat df = new DecimalFormat("#.00");
-
-    public Item(String itemName, double itemPrice, int itemQuantity) {
-
-        name = itemName;
-        price = itemPrice;
-        quantity = itemQuantity;
-    DecimalFormat df = new DecimalFormat("#.00");
-
-    public Item(String itemName, double itemPrice, int itemQuantity) {
-
-        name = itemName;
-        price = itemPrice;
-        quantity = itemQuantity;
 
     }
 
     public String toString() {
-        return "Item Name: " + name + ", Item Price: $" + price + ", Item Quantity: " + quantity;
-        // return name + "\t\t" + df.format(price) + "\t\t" + quantity + "\t\t" + df.format(price * quantity);
-        return String.format("%-17s %-17s %-17s %-17s", name, df.format(price), quantity, df.format(price * quantity));
-        // return name + "\t\t" + df.format(price) + "\t\t" + quantity + "\t\t" + df.format(price * quantity);
-        return String.format("%-17s %-17s %-17s %-17s", name, df.format(price), quantity, df.format(price * quantity));
+
+        String part1 = name;
+        String part2 = String.format("%12f", price);
+        String part3 = String.format("%4d", quantity);
+        String part4 = String.format("%12f", price * quantity);
+
+        return part1 + part2 + part3 + part4;
+
     }
 
     public String getName() {
@@ -48,11 +33,8 @@ public class Item {
         return price;
     }
 
-    public int getQuantity() {
+    public int getQuanitity() {
         return quantity;
     }
 
-
-}
-}
 }
