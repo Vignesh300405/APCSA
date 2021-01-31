@@ -1,17 +1,25 @@
-import Chapter4.Code;
-
-import java.util.Scanner;
+import java.util.ArrayList;
 
 public class testFile {
 
     public static void main(String[] args) {
-        Code code1 = new Code("abcdefg");
+    
+        ArrayList<Integer> list = new ArrayList<Integer>(); 
 
-        code1.hide(1,4);
-        code1.recover(1,2);
-        code1.hide(3,6);
-        code1.recover(3,5);
+
+        int len = list.size();
+        for (int i = 0; i < len; i++) {
+    
+            list.add(i + 1, i);
+            Object x = list.set(i, i);
+
+            System.out.println(list);
+        }    
+
+        System.out.println(list);
+
     }
+
 }
 
 
