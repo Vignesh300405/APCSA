@@ -48,10 +48,6 @@ public class ShoppingCart {
     public String toString() {
 
         String cartOutput = "\n\tShopping Cart\n";
-        // cartOutput += "Item";
-        // cartOutput += String.format("%14s", "Unit Price");
-        // cartOutput += String.format("%12s", "Quantity");
-        // cartOutput += String.format("%12s", "Total\n");
         cartOutput += "Item\t\tUnit Price\tQuantity\tTotal\n";
         
         for(int i = 0; i < capacity; i++) {
