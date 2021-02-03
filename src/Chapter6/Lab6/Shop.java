@@ -54,7 +54,7 @@ public class Shop {
 
             if(cart.get(i) != null) {
                 cartOutput += theItem + "\n";
-                totalPrice = theItem.getPrice() * theItem.getQuanitity();
+                totalPrice += theItem.getPrice() * theItem.getQuanitity();
             }
         }
 

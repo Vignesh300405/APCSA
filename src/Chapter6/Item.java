@@ -30,14 +30,21 @@ public class Item {
 
     public String toString() {
 
-        String part1 = name;
-        // String part2 = String.format("%12f", df.format(price));
-        // String part3 = String.format("%12f", quantity);
-        // String part4 = String.format("%12f", df.format(price * quantity));
+        String returnString = name;
+        for(int i = 16; i > name.length(); i--) {
+            returnString += " ";
+        }
+        returnString += df.format(price);
+        for(int i = 16; i > df.format(price).length(); i--) {
+            returnString += " ";
+        }
+        returnString += quantity;
+        for(int i = 16; i > String.valueOf(quantity).length(); i--) {
+            returnString += " ";
+        }
+        returnString += df.format(price * quantity);
 
-        // return part1 + part2 + part3 + part4;
-
-        return (name + "\t" + df.format(price) + "\t" + quantity + "\t" + df.format(price * quantity));
+        return returnString;
 
     }
 
