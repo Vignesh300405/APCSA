@@ -15,7 +15,7 @@ public class Shop {
     double totalPrice = 0;
     int quantity;
     ArrayList<Item> cart = new ArrayList<Item>();
-    DecimalFormat df = new DecimalFormat("#.##");
+    DecimalFormat df = new DecimalFormat("#.00");
 
  	Scanner scan = new Scanner(System.in);
 
@@ -45,7 +45,7 @@ public class Shop {
 
         totalPrice = 0;
         
-        String cartOutput = "\n\tShopping Cart\n";
+        String cartOutput = "\n\t\tShopping Cart\n";
         cartOutput += "Item\t\tUnit Price\tQuantity\tTotal\n";
         
         for(int i = 0; i < cart.size(); i++) {

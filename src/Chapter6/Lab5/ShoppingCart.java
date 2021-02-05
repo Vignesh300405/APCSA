@@ -39,6 +39,9 @@ public class ShoppingCart {
     public void addToCart(String newName, double newPrice, int newQuantity) {
         Item newItem = new Item(newName, newPrice, newQuantity);
 
+        if(itemCount >= cart.length) {
+            increaseSize();
+        }
         cart[itemCount] = newItem;
         itemCount++;
 
@@ -47,7 +50,7 @@ public class ShoppingCart {
 
     public String toString() {
 
-        String cartOutput = "\n\tShopping Cart\n";
+        String cartOutput = "\n\t\tShopping Cart\n";
         cartOutput += "Item\t\tUnit Price\tQuantity\tTotal\n";
         
         for(int i = 0; i < capacity; i++) {
