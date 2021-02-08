@@ -16,7 +16,7 @@ public class Square {
 
         int sum = 0;
 
-        for(int i = 0; i < square.length; i++) {
+        for(int i = 0; i < square.length; i++)
             sum += square[row - 1][i];
 
         return sum;
@@ -28,7 +28,7 @@ public class Square {
 
         int sum = 0;
 
-        for(int i = 0; i < square.length; i++) {
+        for(int i = 0; i < square.length; i++)
             sum += square[i][col - 1];
 
         return sum;
@@ -59,14 +59,18 @@ public class Square {
     public boolean magic() {
 
         int compareValue = sumMainDiag();
-        boolean isMagic = (sumOtherDiag() == compareValue);
+        boolean isMagic = true;
 
-        for(int i = 0; i < square.length; i++) {
+        for(int i = 1; i < square.length; i++) {
 
-           if((sumRow(i)!= compareValue) || (sumCol(i) != compareValue))
+           if((sumRow(i) != compareValue) || (sumCol(i) != compareValue))
                 isMagic = false;
 
         }
+
+        if(compareValue != sumOtherDiag())
+            isMagic = false;
+
 
         return isMagic;
 
@@ -74,7 +78,7 @@ public class Square {
 
     public void readSquare(Scanner scan) {
 
-        for(int row = 9; row < square.length; row++)
+        for(int row = 0; row < square.length; row++)
             for(int col = 0; col < square.length; col++)
                 square[row][col] = scan.nextInt();
 
@@ -84,7 +88,7 @@ public class Square {
 
         for(int i = 0; i < square.length; i++) {
             for(int j = 0; j < square.length; j++)
-                System.out.print(square[i][j]);
+                System.out.print(square[i][j] + " ");
             System.out.println();
         }        
     }
