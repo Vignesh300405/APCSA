@@ -2,23 +2,41 @@ import java.util.ArrayList;
 
 public class testFile {
 
-    public static void main(String[] args) {
-    
-        ArrayList<Integer> list = new ArrayList<Integer>(); 
+    public int evens(int[][] array) {  // #2
 
+        int sum = 0;
 
-        int len = list.size();
-        for (int i = 0; i < len; i++) {
-    
-            list.add(i + 1, i);
-            Object x = list.set(i, i);
+        for(int i = 0; i < array.length; i++) {
+            for(int j = 0; j < array[i].length; j++) {
+                if((array[i][j] % 2) == 0) {
+                    sum += array[i][j];
+                }
+            }
+        }
+        return sum;
+    }
 
-            System.out.println(list);
+    public int average(int[] nums) {   // #5
+        int sum = 0;
+
+        for(int i : nums) {
+            sum += i;
+        }
+
+        return sum / nums.length; 
+    }
+
+    public ArrayList<String> removeA(ArrayList<String> names) { // #6
+
+        for(int i = 0; i < names.size(); i++) {
+           if(names.get(i).startsWith("a")) {
+               names.remove(i);
+           } 
         }    
 
-        System.out.println(list);
-
+        return names;
     }
+
 
 }
 

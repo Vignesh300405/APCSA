@@ -42,7 +42,7 @@ public class Square {
         for(int i = 0; i < square.length; i++)
             sum += square[i][i];
 
-        return sum;
+        return sum / sumOtherDiag();
 
     }
 
