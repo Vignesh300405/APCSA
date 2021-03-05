@@ -12,6 +12,8 @@ package Chapter7.Lab1;
 public class Yorkshire extends Dog
 {
 
+    private int breedWeight = 40;
+
     public Yorkshire(String name)
     {
 	super(name);
@@ -23,6 +25,10 @@ public class Yorkshire extends Dog
     public String speak()
     {
 	return "woof";
+    }
+
+    public int avgBreedWeight() {
+        return breedWeight;
     }
 
 }

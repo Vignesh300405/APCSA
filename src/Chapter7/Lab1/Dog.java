@@ -6,7 +6,7 @@ package Chapter7.Lab1;
 // A class that holds a dog's name and can make it speak.
 //          
 // ****************************************************************
-public class Dog
+public abstract class Dog
 {
     protected String name;
 
@@ -33,4 +33,7 @@ public class Dog
     {
 	return "Woof";
     }
+    
+    public abstract int avgBreedWeight();
+
 }
