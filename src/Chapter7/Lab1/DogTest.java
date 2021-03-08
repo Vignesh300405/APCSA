@@ -12,13 +12,15 @@ public class DogTest
 {
     public static void main(String[] args)
     {
-	Dog dog = (Dog) new Labrador("Spike", "a");
-	System.out.println(dog.getName() + " says " + dog.speak());
+	//Dog dog = (Dog) new Labrador("Spike", "a");
+	//System.out.println(dog.getName() + " says " + dog.speak());
 
     Labrador lab = new Labrador("Joe", "brown");
-    Yorkshire yorkshire = new Yorkshire("Yorky");
-
+	System.out.println(lab.getName() + " says " + lab.speak());
     System.out.println(lab.avgBreedWeight());
+
+    Yorkshire yorkshire = new Yorkshire("Yorky");
+	System.out.println(yorkshire.getName() + " says " + yorkshire.speak());
     System.out.println(yorkshire.avgBreedWeight());
 
     }
