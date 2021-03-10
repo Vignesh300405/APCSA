@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b276650f-9b99-4bf5-9d77-2f4cc932b7f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chapter7/PolyProject/Firm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chapter6/MagicSquares/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter6/MagicSquares/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter7/PolyProject/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter7/PolyProject/Staff.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +24,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -37,5 +42,31 @@
       <updated>1611588231168</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="685" y="192" width="1071" height="709" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615403570079">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="685" y="192" width="1071" height="709" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1615403570079" />
+    <state x="958" y="339" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1615403566989">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="958" y="339" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1615403566989" />
+    <state x="1293" y="414" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1615402631624">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="1293" y="414" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1615402631624" />
+    <state x="619" y="292" key="SettingsEditor" timestamp="1615402787640">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="619" y="292" key="SettingsEditor/0.0.1920.1044@0.0.1920.1044" timestamp="1615402787640" />
+    <state x="1119" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1615402348259">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="1119" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1615402348259" />
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1615402756772">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1615402756772" />
   </component>
 </project>

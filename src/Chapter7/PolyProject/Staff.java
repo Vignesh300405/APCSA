@@ -17,7 +17,7 @@ public class Staff {
         staffList[7] = new Volunteer("Mrs. McClelland", "888 Main Street", "888-8888");
         staffList[8] = new Volunteer("Mr. Sanchez", "999 Main Street", "999-9999");
         staffList[9] = new Commission("Ms. Petry", "1000 Main Street", "100-0000", "100-000-0000", 85000);
-        staffList[10] = new Employee("Mr. Suresh Kumar", "111 Main Street", "123-1234", "123-123-1234", 85000);
+        staffList[10] = new Employee("Mr. Suresh Kumar", "111 Main Street", "123-1234", "123-123-1234", 30000);
 
         ((Executive)staffList[0]).awardBonus(25000);
         ((Hourly)staffList[3]).addHours(41);
@@ -27,5 +27,21 @@ public class Staff {
         ((Commission)staffList[9]).addCommission(1000);
     }
 
+        public void payday() {
+            double amount;
+
+            for(int count = 0; count < staffList.length; count++) {
+                System.out.println(staffList[count]);
+
+                amount = staffList[count].pay();
+
+                if(amount == 0.0)
+                    System.out.println("Thanks!");
+                else
+                    System.out.println("Paid: " + amount);
+
+                System.out.println("-------------------------------------");
+            }
+        }
+    }
     
-}

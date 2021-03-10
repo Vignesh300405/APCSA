@@ -31,7 +31,7 @@ public class Hourly extends Employee {
       double payment = getPayRate() * hoursWorked;
 
       if(hoursWorked > 40)
-        payment += (hoursWorked - 40) * getPayRate() * 1.5;
+        payment += (hoursWorked - 40) * getPayRate() * 0.5;
 
       hoursWorked = 0;
 
