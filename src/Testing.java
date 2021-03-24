@@ -69,6 +69,15 @@ public class Testing {
 	    else
 		return 1 + getSomething(value - 2);
 	}
+
+	public int mysteries(int n) {
+
+	    if (n < 0)
+		return 2;
+	    else
+		return mysteries(n - 1) + mysteries(n - 3);
+	    
+	}
 	    
     }
 
@@ -78,11 +87,12 @@ public class Testing {
 
 		// System.out.println(test.mystery3(-479));
 		// System.out.println(test.mystery4(3052));
-		/*int[] array = {2,4,6};
-		  System.out.println(test.sum(array,3));*/
+		int[] array = {2,4,6};
+		  System.out.println(test.sum(array,3));
 		//System.out.println(test.filter("papaya","pa"));
 		//test.mystery(0,16);
 		//System.out.println(test.getSomething(75)); # Add one for each interval in which it is divided by 2, so 5 would be 2 because 5-2=3 then 3-2=1.
+		  System.out.println(test.mysteries(3));
 
 
     }
