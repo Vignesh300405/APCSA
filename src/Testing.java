@@ -35,6 +35,18 @@ public class Testing {
 			}
 		}
 
+	public int mystery5(int x, int y) {
+	    if(x < 0)
+		return -mystery5(-x,y);
+	    else if (y < 0)
+		return -mystery5(x,-y);
+	    else if(x == 0 && y == 0)
+		return 0;
+	    else
+		return 100*mystery5(x/10,y/10) + 10*(x%10) + y%10;
+	}
+
+	// Practice #3
 	public String smile(int n) {
 	    String output = "";
 	    if (n == 0)
@@ -78,6 +90,81 @@ public class Testing {
 		return mysteries(n - 1) + mysteries(n - 3);
 	    
 	}
+
+	// Quiz Questions
+	// 8
+	public void mysteria(int n) {
+	    if (n > 2)
+		mysteria (n % 5);
+	    System.out.println((n / 4) + " ");
+	}
+
+	// 7
+	public void mystery7(int x, int y) {
+	    if(y == 1)
+		System.out.print(x);
+	    else {
+		System.out.print(x * y + ",");
+		mystery7(x, y - 1);
+		System.out.print("," + x * y);
+	    }
+	}
+
+	//6
+	public void mystery6(int a, int b) {
+	    System.out.print(a + " ");
+	    if(a <= b)
+		mystery6(a + 4, b - 1);
+	}
+
+	//5
+	public int mysteria5(int x, int y) {
+	    if (x < 0)
+		return -mysteria5(-x,y);
+	    else if(y < 0)
+		return -mysteria5(x,-y);
+	    else if(x == 0 && y == 0)
+		return 0;
+	    else
+		return 100 * mysteria5(x / 10, y / 10) + 10 * (x % 10) + y % 10;
+		
+	}
+
+	//4
+	public int mysteria4(int n) {
+	    if(n < 0)
+		return mysteria4(-n);
+	    else if (n < 10)
+		return n;
+	    else
+		return n % 10 + mysteria4(n / 10);
+	}
+
+	//3
+	public int mysteria3(int n) {
+	    if (n < 0)
+		return -mystery3(-n);
+	    else if (n < 10)
+		return n;
+	    else
+		return mystery3(n / 10 + n % 10);
+	}
+
+	//2
+	public int mysterySum(int a) {
+	    if (a == 1)
+		return 6;
+	    else
+		return 6 + mysterySum(a-1);
+	}
+
+	//1
+	public int mystery1(int x, int y) {
+	    if (x < y)
+		return x;
+	    else
+		return mystery1(x-y,y);
+	}
 	    
     }
 
@@ -87,12 +174,25 @@ public class Testing {
 
 		// System.out.println(test.mystery3(-479));
 		// System.out.println(test.mystery4(3052));
-		int[] array = {2,4,6};
-		  System.out.println(test.sum(array,3));
+		/*int[] array = {2,4,6};
+		  System.out.println(test.sum(array,3));*/
 		//System.out.println(test.filter("papaya","pa"));
 		//test.mystery(0,16);
 		//System.out.println(test.getSomething(75)); # Add one for each interval in which it is divided by 2, so 5 would be 2 because 5-2=3 then 3-2=1.
-		  System.out.println(test.mysteries(3));
+		  //System.out.println(test.mysteries(3));
+		  //System.out.println(test.mystery5(5,7));
+
+
+		// Quiz Questions: #8 to #1 in descending order
+		//test.mysteria(41);
+		//test.mystery7(2,4);
+		//test.mystery6(2,14);
+		//System.out.println(test.mysteria5(212,349));
+		//System.out.println(test.mysteria4(5178));
+		//System.out.println(test.mysteria3(-295));
+		//System.out.println(test.mysterySum(5));
+		//System.out.println(test.mystery1(6,13));
+		
 
 
     }
